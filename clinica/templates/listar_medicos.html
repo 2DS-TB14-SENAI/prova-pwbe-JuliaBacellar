@@ -1,0 +1,10 @@
+{% extends '/base.html' %}
+
+{% block content %}
+    <h2>Lista de médicos </h2>
+    <ul>
+        {% for medico in medicos %}
+            <li>{{ medico.nome }} - {{ medico.especialidade }} </li>
+        {% endfor %}
+    </ul>
+
